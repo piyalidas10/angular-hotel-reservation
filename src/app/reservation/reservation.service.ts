@@ -33,7 +33,7 @@ export class ReservationService {
 
   deleteReservation(id: string): void {
     let index = this.reservations.findIndex(res => res.id === id);
-    this.reservations.splice(index,1)
+    this.reservations.splice(index,1);
     localStorage.setItem("reservations", JSON.stringify(this.reservations));
   }
 
